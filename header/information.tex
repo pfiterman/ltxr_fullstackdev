@@ -1,0 +1,40 @@
+%====================
+% Header: Contact
+%====================
+\RequirePackage{fancyhdr}
+\fancypagestyle{firstpage}{
+  \fancyhf{}
+  
+  \lhead{
+    \begin{minipage}[t]{0.8\textwidth}
+      \phone \\ % Phone    
+      \city \\ % City
+      \href{mailto:\email}{\email} % Email
+    \end{minipage}
+  }
+  
+  \chead{
+    \begin{minipage}[t]{0.6\textwidth}
+      \centering
+      {\Huge \skills \name \vspace{.25em} \\}
+      {\color{black} \Large \role}
+    \end{minipage}
+  }
+  
+  \rhead{
+    \begin{minipage}[t]{0.8\textwidth}
+      \raggedleft
+      \href{https://www.linkedin.com/in/\LinkedIn}{linkedin.com/in/\LinkedIn} \\
+      \href{https://github.com/\github}{github.com/\github} \\
+      \href{https://pfiterman-portfolio.netlify.app}{pfiterman-portfolio.netlify.app}
+    \end{minipage}
+  }
+
+  \renewcommand{\headrulewidth}{1pt}
+  \renewcommand{\headrule}{\hbox to\headwidth{%
+    \color{black}\leaders\hrule height \headrulewidth}}
+}
+
+
+\setlength{\headheight}{90pt}
+\setlength{\headsep}{15pt}
